@@ -78,7 +78,7 @@ const Home = ({ setIsAuthenticated }) => {
     };
   };
 
-  // Fetch ads from the server
+  // Fetch ads from the servers
   useEffect(() => {
     fetch('http://localhost:3001/home')
       .then(response => response.json())
