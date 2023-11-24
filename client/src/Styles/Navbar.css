@@ -1,0 +1,38 @@
+.menu {
+    background-color: #000000;
+    color: aliceblue;
+    padding: 0.8rem;
+    height: 30px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    height: 50px;
+    width: 150px;
+    margin-top: -8px;
+}
+
+.menu p {
+    font-size: 26px;
+    margin-top: -6px;
+}
+
+@media (max-width: 768px) {
+    .menu p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .img {
+        height: 40px;
+        width: 100px;
+        margin-top: -5px;
+    }
+}

@@ -1,0 +1,127 @@
+.main-page-bg {
+  margin: 0;
+  padding: 0;
+  background-image: url('../Images/bg-car.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container h1 {
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.login-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #efefef;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline: 0;
+}
+
+.password-toggle-btn {
+  transform: translateX(375px);
+  margin-top: 9px;
+  position: absolute;
+  background:none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #ccc;
+  width: fit-content;
+  
+}
+
+.password-input-container {
+  display: flex;
+}
+
+.password-input {
+  flex: 1;
+}
+
+.password-toggle-btn:hover {
+  color: #666;
+}
+
+.login-container .login-btn {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-container .login-btn:hover {
+  background-color: #47954a;
+}
+
+.login-container .login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-container .error-message {
+  color: red;
+  margin-top: -5px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.login-container .register-option {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-container .register-option a {
+  color: #007bff;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+.login-container .register-option a:hover {
+  text-decoration: underline;
+}
+
+.login-container .register-option span {
+  color: #007bff;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+.login-container .register-option span:hover {
+  text-decoration: underline;
+  cursor: not-allowed;
+}
+
+.login-error {
+  text-align: center;
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .password-toggle-btn {
+    transform: translateX(0px);
+    margin-left: calc(100% - 104px);
+  }
+}
